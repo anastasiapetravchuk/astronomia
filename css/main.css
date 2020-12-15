@@ -73,6 +73,10 @@ h1{
 	font-size: 18px;
 	margin-top: 55px;
 }
+.button:hover {
+	background: lightgray;
+	color: black;
+}
 .title{
 padding-top: 115px;
 }
