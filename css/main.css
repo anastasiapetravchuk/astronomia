@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	padding: 0;
 	margin: 0;
@@ -44,6 +47,7 @@ nav{
 	text-transform: uppercase;
 	font-size: 14px;
 }
+
 .titles_first{
 	font-size: 40px;
 	color:white;
@@ -72,10 +76,26 @@ h1{
 	font-weight: bold;
 	font-size: 18px;
 	margin-top: 55px;
+	transition: 1s ease-in-out;
+}
+
+svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #fff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
 }
 .button:hover {
 	background: lightgray;
 	color: black;
+	transition: 1s ease-in-out;
+}
+.button:hover svg {
+	stroke-dashoffset: -480;
 }
 .title{
 padding-top: 115px;
@@ -171,11 +191,17 @@ padding-top: 115px;
 	background: lavender;
 	padding-bottom: 80px;
 }
-.words p{
+.words li{
+	padding: 30px;
+	float: right;
+	display: block;
+	margin-left: 61px;
+}
+.words li a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
 	font-size: 14px;
-	color: gray;
-	text-align: center;
-	padding-top: 50px;
 }
 #video{
 	background: gainsboro;
